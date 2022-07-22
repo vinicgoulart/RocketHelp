@@ -31,7 +31,7 @@ export function Signin() { //começa com letra maiúscula sempre
             </Heading>
 
             <Input
-                placeholder="E-mail"
+                placeholder="Email"
                 mb={4}
                 mr={1}
                 InputLeftElement={<Icon as={<Envelope color={colors.gray[300]} />} ml={4} />}  
