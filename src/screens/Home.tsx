@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { VStack, HStack, IconButton, useTheme, Text, Heading, FlatList } from 'native-base';
-import { SignOut } from 'phosphor-react-native';
+import { VStack, HStack, IconButton,  Text, Heading, FlatList, useTheme, Center } from 'native-base';
+import { SignOut, ChatTeardropText } from 'phosphor-react-native';
 
 import Logo from '../assets/logo_secondary.svg';
 
@@ -8,17 +8,51 @@ import { Filter } from '../components/Filter';
 
 import { Order, OrderProps } from '../components/Order';
 
+import { Button } from '../components/Button';
+
 //VSTACK -> vertical
 //HSTACK -> horizontal
 
 export function Home() {
   const [statusSelected, setStatusSelected] = useState<'open' | 'closed'>('open'); //o uso de <> limita as opções
-  const [orders, setOrders] = useState<OrderProps[]>([{
-        id: '123',
-        patrimony: '32321',
-        when: '18/07/2022 às 10:00',
-        status: 'open'
-    }]);
+  const [orders, setOrders] = useState<OrderProps[]>([
+        // {
+        //     id: '123',
+        //     patrimony: '32321',
+        //     when: '18/07/2022 às 10:00',
+        //     status: 'open'
+        // },
+        // {
+        //     id: '124',
+        //     patrimony: '32322',
+        //     when: '18/07/2022 às 11:00',
+        //     status: 'open'
+        // },
+        // {
+        //     id: '125',
+        //     patrimony: '32323',
+        //     when: '18/07/2022 às 12:00',
+        //     status: 'open'
+        // },
+        // {
+        //     id: '126',
+        //     patrimony: '32324',
+        //     when: '18/07/2022 às 12:00',
+        //     status: 'open'
+        // },
+        // {
+        //     id: '127',
+        //     patrimony: '32325',
+        //     when: '18/07/2022 às 12:00',
+        //     status: 'open'
+        // },
+        // {
+        //     id: '128',
+        //     patrimony: '32326',
+        //     when: '18/07/2022 às 12:00',
+        //     status: 'open'
+        // },
+    ]);
 
   const { colors } = useTheme();
   return (
@@ -87,8 +121,26 @@ export function Home() {
                 <FlatList
                   data={orders}
                   keyExtractor={item => item.id}
-                  renderItem={( { item } ) => <Order data={ item } /> }
+                  renderItem={({ item }) => <Order data={item} />}
+                  showsVerticalScrollIndicator={false}
+                  contentContainerStyle={{ paddingBottom: 25 }}
+                  ListEmptyComponent={() => (
+                    <Center>
+                        <ChatTeardropText color={colors.gray[300]} size={40} />
+                        <Text
+                        color="gray.300"
+                        fontSize="xl"
+                        mt={6}
+                        textAlign="center"
+                        >
+                            Se sentindo sozinho? Sem solicitações por aqui.   
+                        </Text>
+                    </Center>
+                  ) }
                 />
+
+                <Button title="Nova solicitação" />
+                
             </VStack>
         </VStack>
   );
