@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { VStack, HStack, IconButton,  Text, Heading, FlatList, useTheme, Center } from 'native-base';
 import { SignOut, ChatTeardropText } from 'phosphor-react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import Logo from '../assets/logo_secondary.svg';
 
@@ -54,7 +55,17 @@ export function Home() {
         // },
     ]);
 
-  const { colors } = useTheme();
+    const { colors } = useTheme();
+
+    const navigation = useNavigation();
+
+    function handleNewOrder() {
+        navigation.navigate('new')
+    }
+
+    function handleOpenDetails(orderId: string) {
+        navigation.navigate('details', { orderId }) //always that a route requests a parameter, do this <-
+    }
   return (
         <VStack
         flex={1}
@@ -96,7 +107,9 @@ export function Home() {
                     </Heading>
                     <Text
                     color="gray.200"
-                    >3</Text>
+                    >
+                        {orders.length}
+                    </Text>
                 </HStack>
 
                 <HStack
@@ -121,7 +134,7 @@ export function Home() {
                 <FlatList
                   data={orders}
                   keyExtractor={item => item.id}
-                  renderItem={({ item }) => <Order data={item} />}
+                  renderItem={({ item }) => <Order data={item} onPress={ () => handleOpenDetails(item.id) } />}
                   showsVerticalScrollIndicator={false}
                   contentContainerStyle={{ paddingBottom: 25 }}
                   ListEmptyComponent={() => (
@@ -139,7 +152,7 @@ export function Home() {
                   ) }
                 />
 
-                <Button title="Nova solicitação" />
+                <Button title="Nova solicitação" onPress={ handleNewOrder } />
                 
             </VStack>
         </VStack>
