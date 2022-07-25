@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { Alert } from 'react-native';
 import { VStack, HStack, IconButton,  Text, Heading, FlatList, useTheme, Center } from 'native-base';
 import { SignOut, ChatTeardropText } from 'phosphor-react-native';
 import { useNavigation } from '@react-navigation/native';
+import  Auth  from '@react-native-firebase/auth';
 
 import Logo from '../assets/logo_secondary.svg';
 
@@ -66,6 +68,17 @@ export function Home() {
     function handleOpenDetails(orderId: string) {
         navigation.navigate('details', { orderId }) //always that a route requests a parameter, do this <-
     }
+
+    function handleLogout() {
+        Auth()
+            .signOut()
+            .catch((error) => {
+                console.log(error);
+
+                return Alert.alert('Sair', 'Não foi possível sair desta conta!');
+            });
+    }
+
   return (
         <VStack
         flex={1}
@@ -84,7 +97,8 @@ export function Home() {
                 <Logo />
 
                 <IconButton
-                icon={<SignOut size={26} color={ colors.gray[300] } />}
+                icon={<SignOut size={26} color={colors.gray[300]} />}
+                onPress={ handleLogout }
                 />
                 
             </HStack> 
