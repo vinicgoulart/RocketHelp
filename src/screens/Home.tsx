@@ -17,42 +17,42 @@ import { Button } from '../components/Button';
 export function Home() {
   const [statusSelected, setStatusSelected] = useState<'open' | 'closed'>('open'); //o uso de <> limita as opções
   const [orders, setOrders] = useState<OrderProps[]>([
-        // {
-        //     id: '123',
-        //     patrimony: '32321',
-        //     when: '18/07/2022 às 10:00',
-        //     status: 'open'
-        // },
-        // {
-        //     id: '124',
-        //     patrimony: '32322',
-        //     when: '18/07/2022 às 11:00',
-        //     status: 'open'
-        // },
-        // {
-        //     id: '125',
-        //     patrimony: '32323',
-        //     when: '18/07/2022 às 12:00',
-        //     status: 'open'
-        // },
-        // {
-        //     id: '126',
-        //     patrimony: '32324',
-        //     when: '18/07/2022 às 12:00',
-        //     status: 'open'
-        // },
-        // {
-        //     id: '127',
-        //     patrimony: '32325',
-        //     when: '18/07/2022 às 12:00',
-        //     status: 'open'
-        // },
-        // {
-        //     id: '128',
-        //     patrimony: '32326',
-        //     when: '18/07/2022 às 12:00',
-        //     status: 'open'
-        // },
+        {
+            id: '123',
+            patrimony: '32321',
+            when: '18/07/2022 às 10:00',
+            status: 'open'
+        },
+        {
+            id: '124',
+            patrimony: '32322',
+            when: '18/07/2022 às 11:00',
+            status: 'open'
+        },
+        {
+            id: '125',
+            patrimony: '32323',
+            when: '18/07/2022 às 12:00',
+            status: 'open'
+        },
+        {
+            id: '126',
+            patrimony: '32324',
+            when: '18/07/2022 às 12:00',
+            status: 'open'
+        },
+        {
+            id: '127',
+            patrimony: '32325',
+            when: '18/07/2022 às 12:00',
+            status: 'open'
+        },
+        {
+            id: '128',
+            patrimony: '32326',
+            when: '18/07/2022 às 12:00',
+            status: 'open'
+        },
     ]);
 
     const { colors } = useTheme();
