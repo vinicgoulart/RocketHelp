@@ -24,15 +24,7 @@ export function Signin() { //começa com letra maiúscula sempre
         setIsLoading(true);
 
         auth()
-        .signInWithEmailAndPassword(email, password)
-        .then(response => {
-            // console.log(response);
-            setIsLoading(false);
-
-            Alert.alert('Entrar', 'Logado com sucesso!');
-            
-
-        })    
+        .signInWithEmailAndPassword(email, password)   
         .catch((error) => {
             console.log(error);
             setIsLoading(false);
