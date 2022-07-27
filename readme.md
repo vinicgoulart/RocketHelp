@@ -24,19 +24,19 @@ The purpouse of this project is to learn different programming areas that aren't
 
 ## Pictures of the project in an Android device
 ### Login page
-![Login page image](https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/login-page.jpeg?raw=true)
+<img src="https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/login-page.jpeg?raw=true" width=20% height=30%>
 
 ### Home page
-![Home page image](https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/home-page.jpeg?raw=true)
+<img src="https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/home-page.jpeg?raw=true" width=20% height=30%>
 
 ### Create a new ticket page
-![Create a new ticket page image](https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/create-ticket.jpeg?raw=true)
+<img src="https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/create-ticket.jpeg?raw=true" width=20% height=30%>
 
 ### Open ticket's page
-![Open ticket's page image](https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/open-ticket.jpeg?raw=true)
+<img src="https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/open-ticket.jpeg?raw=true" width=20% height=30%>
 
 ### Closed ticket's page
-![Closed ticket's page image](https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/closed-ticket.jpeg?raw=true)
+<img src="https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/closed-ticket.jpeg?raw=true" width=20% height=30%>
 
 ## Pictures of the project in an IOS device
 Pictures of the project in an IOS device aren't available, as for default React Native requires MacOS and other Apple tools to debug it.
