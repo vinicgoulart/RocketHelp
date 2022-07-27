@@ -49,19 +49,19 @@ O objetivo deste projeto é aprender novas áreas dentro de programação que n�
 
 ## Fotos do aplicativo em um dispositivo Android
 ### Página de login
-(https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/login-page.jpeg?raw=true)
+<img src="https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/login-page.jpeg?raw=true" width=20% height=30%>
 
 ### Home page
-(https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/home-page.jpeg?raw=true)
+<img src="https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/home-page.jpeg?raw=true" width=20% height=30%>
 
 ### Página de criar um ticket
-(https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/create-ticket.jpeg?raw=true)
+<img src="https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/create-ticket.jpeg?raw=true" width=20% height=30%>
 
 ### Página de um ticket aberto
-(https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/open-ticket.jpeg?raw=true)
+<img src="https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/open-ticket.jpeg?raw=true" width=20% height=30%>
 
 ### Página de um ticket fechado
-(https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/closed-ticket.jpeg?raw=true)
+<img src="https://github.com/vinicgoulart/RocketHelp/blob/master/screenshots/closed-ticket.jpeg?raw=true" width=20% height=30%>
 
 ## Fotos do aplicativo em um dispositivo IOS
 As fotos do projeto em um dispositivo IOS não estão disponíveis, já que por padrão o React Native pede ferramentas Apple como MacOS para debugar ele.
