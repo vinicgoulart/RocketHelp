@@ -5,7 +5,7 @@ RocketHelp é um aplicativo mobile baseado na Ignite Lab promovida pela Rocketse
 
 ## Table of Contents (en)
 - [About the app](#about-the-app)
-- [Project's purpouse](#purpouse)
+- [Project's purpose](#purpose)
 - [Pictures of the project in an Android device](#pictures-of-the-project-in-an-android-device)
 - [Pictures of the project in an IOS device](#pictures-of-the-project-in-an-ios-device)
 
@@ -19,8 +19,8 @@ RocketHelp é um aplicativo mobile baseado na Ignite Lab promovida pela Rocketse
 
 This project features an app that has as the main purpose to receive tickets about broken or malfunctioning computers to people that should know the solution to the problem in question. As usual, the app requires an account to log in and do the operations. Any user is able to close an open ticket as long as this user has the solution to that problem.
 
-## Purpouse
-The purpouse of this project is to learn different programming areas that aren't as spread as others, as the case of Mobile Development, as well as to get used to new technologies and different ways to code and get even more professional when it comes to clean and understandable code.
+## Purpose
+The purpose of this project is to learn different programming areas that aren't as spread as others, as the case of Mobile Development, as well as to get used to new technologies and different ways to code and get even more professional when it comes to clean and understandable code.
 
 ## Pictures of the project in an Android device
 ### Login page
